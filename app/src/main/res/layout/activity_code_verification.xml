@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.activity.CodeVerificationActivity">
+
+    <include
+        layout="@layout/layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/c_toolbar"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/c_toolbar"
+        android:id="@+id/snackbarlocation" />
+
+    <ScrollView
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_enter_pin_code_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_or_padding_24"
+                android:layout_marginEnd="@dimen/margin_or_padding_24"
+                android:text="@string/activity_mobile_verification_enter_pin_code"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_size_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pinInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginStart="@dimen/margin_or_padding_24"
+                android:layoutDirection="ltr"
+                android:layout_marginTop="@dimen/margin_or_padding_20"
+                android:layout_marginEnd="@dimen/margin_or_padding_24"
+                app:layout_constraintBottom_toTopOf="@id/btn_pincode_verification_confirm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_enter_pin_code_label"
+                app:boxStrokeColor="@color/colorAccent"
+                app:boxStrokeWidth="0.8dp"
+                app:hintEnabled="false"
+                app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pinText"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberSigned"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.nafaz.android.ui.view.button.LoadingMaterialButton
+                android:id="@+id/btn_pincode_verification_confirm"
+                style="?buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_height"
+                android:textSize="@dimen/font_size_16"
+                app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner"
+                android:layout_marginStart="@dimen/margin_or_padding_24"
+                android:layout_marginTop="@dimen/margin_or_padding_20"
+                android:layout_marginEnd="@dimen/margin_or_padding_24"
+                android:text="@string/activity_id_num_confirm_btn"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pinInput"
+                app:lb_loaderMargin="@dimen/margin_or_padding_12" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

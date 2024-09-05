@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:layout_margin="@dimen/margin_or_padding_4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/margin_or_padding_8"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_manage_acc_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_email_verification_title"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/font_size_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_manage_acc_delete"
+            android:layout_width="@dimen/margin_or_padding_24"
+            android:layout_height="@dimen/margin_or_padding_24"
+            android:contentDescription="@string/image_description"
+            android:background="@color/dark_red"
+            android:padding="@dimen/margin_or_padding_4"
+            android:src="@drawable/icon_manage_acc_delete"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/margin_or_padding_8"
+            app:layout_constraintEnd_toStartOf="@id/img_manage_acc_edit"/>
+
+        <ImageView
+            android:id="@+id/img_manage_acc_edit"
+            android:layout_width="@dimen/margin_or_padding_24"
+            android:layout_height="@dimen/margin_or_padding_24"
+            android:contentDescription="@string/image_description"
+            android:background="@color/blue"
+            android:padding="@dimen/margin_or_padding_4"
+            android:visibility="gone"
+            android:src="@drawable/icon_manage_acc_edit"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/margin_or_padding_8"
+            app:layout_constraintEnd_toStartOf="@id/img_manage_acc_verified"/>
+
+        <ImageView
+            android:id="@+id/img_manage_acc_verified"
+            android:layout_width="@dimen/margin_or_padding_24"
+            android:layout_height="@dimen/margin_or_padding_24"
+            android:contentDescription="@string/image_description"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/margin_or_padding_4"
+            android:src="@drawable/icon_verified"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

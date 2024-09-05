@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SplashActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginStart="-8dp"
+            android:id="@+id/imgLang"
+            android:rotationY="@integer/locale_mirror_flip"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/en_lang"
+        />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_marginStart="130dp"
+        android:layout_height="200dp">
+        <ImageView
+            android:rotationY="@integer/locale_mirror_flip"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg2"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_nafadh_logo_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_or_padding_30"
+        android:layout_marginBottom="@dimen/margin_or_padding_16"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toTopOf="@id/tv_splash_centered_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img" />
+
+    <TextView
+        android:id="@+id/tv_splash_centered_text"
+        android:layout_marginTop="@dimen/margin_or_padding_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_splash_centered_text"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_nafadh_logo_green" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_onetime"
+        style="?buttonStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bt_height"
+        app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner"
+        android:layout_marginEnd="@dimen/margin_or_padding_30"
+        android:text="@string/one_time_pass"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/margin_or_padding_30"
+        android:layout_marginBottom="@dimen/margin_or_padding_10"
+        android:background="@android:color/transparent"
+        android:textSize="@dimen/font_size_16"
+        app:layout_constraintBottom_toTopOf="@id/btn_auth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_auth"
+        style="?buttonStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bt_height"
+        app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner"
+        android:layout_marginStart="@dimen/margin_or_padding_30"
+        android:layout_marginEnd="@dimen/margin_or_padding_30"
+        android:layout_marginBottom="@dimen/margin_or_padding_10"
+        android:text="@string/authentication"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:textSize="@dimen/font_size_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btLogin"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btLogin"
+        style="?buttonStyle"
+        android:enabled="false"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bt_height"
+        app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner"
+        android:layout_marginStart="@dimen/margin_or_padding_30"
+        android:layout_marginEnd="@dimen/margin_or_padding_30"
+        android:layout_marginBottom="@dimen/margin_or_padding_20"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:textSize="@dimen/font_size_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/img_saudi_arabian_vector"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_saudi_arabian_vector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_or_padding_20"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

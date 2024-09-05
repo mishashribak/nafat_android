@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.fragment.ProfileFragment">
+
+    <TextView
+        android:id="@+id/tv_manage_acc_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_or_padding_84"
+        android:background="@color/colorAccent"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:maxLines="2"
+        android:padding="@dimen/margin_or_padding_16"
+        android:text="@string/label_manage_acc_description"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="This list contains the available authentication methods and status This list contains the available authentication methods and status" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/snackbarlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_manage_acc_description" />
+
+    <ProgressBar
+        android:id="@+id/pb_mng_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="com.nafaz.app.ui.fragment.ManageAccountFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_or_padding_4"
+        android:background="@android:color/white"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_manage_acc_description"
+        app:layout_constraintStart_toStartOf="@+id/tv_manage_acc_description"
+        app:layout_constraintTop_toBottomOf="@id/tv_manage_acc_description"
+        tools:context=".ui.fragment.ManageAccountFragment"
+        tools:listitem="@layout/adapter_manage_account_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

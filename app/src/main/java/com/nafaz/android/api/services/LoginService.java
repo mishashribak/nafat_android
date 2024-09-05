@@ -1,0 +1,61 @@
+package com.nafaz.android.api.services;
+
+import android.util.Log;
+
+import com.google.gson.Gson;
+import com.nafaz.android.api.callback.ApiCallback;
+import com.nafaz.android.api.core.APIBulldozer;
+import com.nafaz.android.api.entity.ApiResponse;
+import com.nafaz.android.api.entity.LoginRequest;
+import com.nafaz.android.api.entity.RegisterMobileRequest;
+import com.nafaz.android.api.helper.ErrorParser;
+import com.nafaz.android.api.interfaces.APIs;
+
+import org.jetbrains.annotations.NotNull;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import timber.log.Timber;
+
+import static com.nafaz.android.api.constants.APIConstants.ResponseCode.CODE_100;
+import static com.nafaz.android.api.constants.APIConstants.ResponseCode.CODE_200;
+
+public class LoginService {
+    private static final String TAG = RegisterMobileService.class.getSimpleName();
+
+    public void start(String cookie, LoginRequest request, final ApiCallback callback) {
+        Log.e("new cookie", cookie);
+        final APIs apIs = APIBulldozer.createAPI(APIs.class);
+
+        apIs.loginUsername(cookie, request)
+                .enqueue(new Callback<ApiResponse>() {
+                    @SuppressWarnings("unchecked")
+                    @Override
+                    public void onResponse(@NotNull Call<ApiResponse> call, @NotNull Response<ApiResponse> response) {
+                        Timber.d("%s Response: %s", TAG, new Gson().toJson(response.body()));
+
+                        if (null == response.body())
+                            return;
+
+                        if (response.isSuccessful()) {
+
+                            if (response.body().code == CODE_200 || response.body().code == CODE_100)
+                                callback.onSuccess(response.body());
+                            else
+                                callback.onFail(ErrorParser.getMessage(response.body()));
+
+                        } else {
+                            Timber.e(response.errorBody().toString());
+                            callback.onFail(ErrorParser.getMessage(response.body()));
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(@NotNull Call<ApiResponse> call, @NotNull Throwable t) {
+                        Timber.tag(TAG).e(t);
+                        callback.onError(t.getMessage());
+                    }
+                });
+    }
+}

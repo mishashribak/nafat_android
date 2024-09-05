@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".ui.activity.HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:minHeight="@dimen/abc_action_bar_default_height_material"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/icon_burger"
+        app:title="@string/activity_main_title"
+        app:titleTextColor="@color/colorAccent">
+
+        <ImageView
+            android:layout_width="@dimen/margin_or_padding_48"
+            android:layout_height="@dimen/margin_or_padding_20"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="@dimen/margin_or_padding_20"
+            android:contentDescription="@string/image_description"
+            android:scaleType="fitXY"
+            android:src="@drawable/nafadh_logo_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/img_saudi_arabian_vector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_or_padding_48"
+        android:alpha="0.8"
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_saudi_vector_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_main" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_capture_code"
+            style="?buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_main_dimen"
+            android:padding="@dimen/margin_or_padding_24"
+            android:stateListAnimator="@null"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/img_capture_code"
+            app:iconGravity="end"
+            app:iconPadding="@dimen/margin_or_padding_2"
+            app:iconSize="@dimen/margin_or_padding_48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/Theme.OutlinedButton.TopSideCutCorner"
+            app:strokeColor="@color/light_grey"
+            app:strokeWidth="0.8dp"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/tv_capture_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_capture_code"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_capture_code" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_account_management"
+            style="?buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_main_dimen"
+            android:layout_marginTop="@dimen/margin_or_padding_48"
+            android:padding="@dimen/margin_or_padding_24"
+            android:stateListAnimator="@null"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/img_account_management"
+            app:iconPadding="@dimen/margin_or_padding_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_capture_code"
+            app:shapeAppearance="@style/Theme.OutlinedButton.TopSideCutCorner"
+            app:strokeColor="@color/light_grey"
+            app:strokeWidth="0.8dp"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/tv_account_management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_account_management"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_account_management" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

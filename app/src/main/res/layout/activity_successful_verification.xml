@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.SuccessfulVerificationActivity">
+
+    <include
+        layout="@layout/layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/c_toolbar"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_successful_verification_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_or_padding_32"
+        android:layout_marginTop="@dimen/margin_or_padding_32"
+        android:layout_marginEnd="@dimen/margin_or_padding_32"
+        android:text="@string/activity_mobile_verification_successful"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/font_size_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c_toolbar" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_or_padding_10"
+        android:layout_marginTop="@dimen/margin_or_padding_20"
+        android:layout_marginEnd="@dimen/margin_or_padding_16"
+        android:background="@drawable/img_divider_green"
+        app:layout_constraintEnd_toEndOf="@id/btn_successful_verification"
+        app:layout_constraintTop_toBottomOf="@id/tv_successful_verification_description" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_successful_mobile_verification"
+        style="?buttonStyle"
+        android:layout_width="@dimen/btn_successful_mobile_verification_dimen"
+        android:layout_height="@dimen/btn_successful_mobile_verification_dimen"
+        android:clickable="false"
+        app:backgroundTint="@color/green"
+        app:icon="@drawable/img_mobile_verification_successful"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/Theme.OutlinedButton.TopSideCutCorner" />
+
+    <com.nafaz.android.ui.view.button.LoadingMaterialButton
+        android:id="@+id/btn_successful_verification"
+        style="?buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_or_padding_24"
+        android:layout_marginTop="@dimen/margin_or_padding_120"
+        android:layout_marginEnd="@dimen/margin_or_padding_24"
+        android:layout_marginBottom="40dp"
+        android:text="@string/btn_next"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_successful_mobile_verification"
+        app:lb_loaderMargin="@dimen/margin_or_padding_12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

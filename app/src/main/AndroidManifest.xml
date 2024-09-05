@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nafaz.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@drawable/nafadh_logo"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/nafadh_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="n">
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.HomeActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.IDNumberActivity"
+            android:configChanges="locale"
+            android:label="@string/toolbar_common_title"
+            android:parentActivityName=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nafaz.android.ui.activity.SplashActivity" />
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.AuthenticationMethodsActivity"
+            android:configChanges="locale"
+            android:label="@string/toolbar_common_title"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nafaz.android.ui.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.MobileVerificationActivity"
+            android:configChanges="locale"
+            android:label="@string/activity_mobile_verification_title"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activity.AuthenticationMethodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nafaz.android.ui.activity.AuthenticationMethodsActivity" />
+        </activity>
+
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.UsernameVerificationActivity"
+            android:configChanges="locale"
+            android:label="@string/username_password"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activity.AuthenticationMethodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nafaz.android.ui.activity.AuthenticationMethodsActivity" />
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.CodeVerificationActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.SuccessfulVerificationActivity"
+            android:configChanges="locale"
+            android:label="@string/verification"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.FaceFingerprintActivity"
+            android:configChanges="locale"
+            android:label="@string/activity_face_fingerprint_title"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.ActionActivity"
+            android:configChanges="locale"
+            android:label="@string/actions"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.FaceCaptureActivity"
+            android:configChanges="locale"
+            android:label="@string/activity_face_fingerprint_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.IDCardActivity"
+            android:label="@string/activity_id_card_verification_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.RegisterNewUserActivity"
+            android:configChanges="locale"
+            android:label="@string/activity_new_account_label"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.AuthenticationPromptActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.EmailVerificationActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.ProtectionQuestionsActivity"
+            android:configChanges="locale"
+            android:label="@string/activity_protection_questions_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.AccountManagementActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_account_management"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:theme="@style/AppTheme.NoTransition"
+            android:name=".ui.activity.GeneratorOTPActivity"
+            android:configChanges="locale"
+            android:label="@string/generator_otp"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

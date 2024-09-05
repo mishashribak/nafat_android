@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.activity.MobileVerificationActivity">
+
+    <include
+        layout="@layout/layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/c_toolbar"
+            layout="@layout/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/llAnimParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cv_username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginStart="@dimen/margin_or_padding_24"
+                android:layout_marginTop="@dimen/margin_or_padding_20"
+                android:layout_marginEnd="@dimen/margin_or_padding_24"
+                app:startIconDrawable="@drawable/username"
+                app:startIconTint="@color/hintColor"
+                app:boxStrokeColor="@color/hintColor"
+                app:boxStrokeWidth="0.8dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_username"
+                    android:padding="0dp"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/hintColor"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/username_required"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cv_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginStart="@dimen/margin_or_padding_24"
+                android:layout_marginTop="@dimen/margin_or_padding_20"
+                android:layout_marginEnd="@dimen/margin_or_padding_24"
+                app:startIconDrawable="@drawable/password"
+                app:startIconTint="@color/hintColor"
+                app:boxStrokeColor="@color/hintColor"
+                app:boxStrokeWidth="0.8dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_password"
+                    android:padding="0dp"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/hintColor"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:hint="@string/pasword_required"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llCode"
+                android:layout_marginTop="@dimen/margin_or_padding_24"
+                android:gravity="center_vertical"
+                android:weightSum="2"
+                android:layout_marginStart="@dimen/margin_or_padding_24"
+                android:layout_marginEnd="@dimen/margin_or_padding_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cv_code"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_weight="1.3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/input_height"
+                    app:startIconDrawable="@drawable/text"
+                    app:startIconTint="@color/hintColor"
+                    app:boxStrokeColor="@color/hintColor"
+                    app:boxStrokeWidth="0.8dp"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tiet_code"
+                        android:layout_width="match_parent"
+                        android:padding="0dp"
+                        android:textColorHint="@color/hintColor"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/type_text"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/imgCode"
+                    android:layout_marginStart="@dimen/margin_or_padding_10"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:scaleType="fitXY"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <com.nafaz.android.ui.view.button.LoadingMaterialButton
+                android:id="@+id/btn_confirm"
+                style="?buttonStyle"
+                app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bt_height"
+                android:textSize="@dimen/font_size_16"
+                android:layout_marginStart="@dimen/margin_or_padding_24"
+                android:layout_marginTop="@dimen/margin_or_padding_20"
+                android:layout_marginEnd="@dimen/margin_or_padding_24"
+                android:text="@string/btn_next"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llCode"
+                app:lb_loaderMargin="@dimen/margin_or_padding_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

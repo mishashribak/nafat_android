@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#1A8978</color>
+    <color name="colorPrimaryDark">#1A8978</color>
+    <color name="colorAccent">#1A8978</color>
+    
+    <!-- App colors -->
+    <color name="dark_grey">#4d4d4d</color>
+    <color name="light_grey">#e4e4e4</color>
+    <color name="green">#9ebf43</color>
+    <color name="red">#bf4643</color>
+    <color name="dark_red">#ca363d</color>
+    <color name="blue">#2d92bc</color>
+    <color name="ripple_color">#980cada2</color>
+    <color name="hintColor">#2C9970</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorProgress">#DDDEDE</color>
+
+    <!-- Fix for TextInputLayout stroke color, check this:
+    https://stackoverflow.com/questions/50817383/change-the-textinputlayout-outline-color -->
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/colorAccent</color>
+
+</resources>

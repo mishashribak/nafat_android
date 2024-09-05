@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_marginBottom="@dimen/margin_or_padding_10"
+    android:layout_marginStart="@dimen/margin_or_padding_10"
+    android:layout_marginEnd="@dimen/margin_or_padding_10"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.nafaz.android.ui.view.button.LoadingMaterialButton
+        android:id="@+id/btMethod"
+        style="?buttonStyle"
+        android:textSize="@dimen/font_size_16"
+        app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_height"
+        android:textAllCaps="false"
+        app:lb_loaderMargin="@dimen/margin_or_padding_12" />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btMethod"-->
+<!--        style="?buttonStyle"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="@dimen/btn_main_dimen"-->
+<!--        android:padding="@dimen/margin_or_padding_24"-->
+<!--        android:stateListAnimator="@null"-->
+<!--        app:backgroundTint="@android:color/transparent"-->
+<!--        app:iconGravity="textStart"-->
+<!--        app:iconTint="@color/colorPrimary"-->
+<!--        app:shapeAppearance="@style/Theme.OutlinedButton.TopSideCutCorner"-->
+<!--        app:strokeColor="@color/colorPrimary"-->
+<!--        app:strokeWidth="1dp"-->
+<!--        tools:targetApi="lollipop" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvMethod"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:textColor="@color/dark_grey"-->
+<!--        android:textSize="@dimen/font_size_12" />-->
+</LinearLayout>

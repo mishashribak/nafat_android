@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.activity.IDCardActivity">
+
+    <include
+        layout="@layout/layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/c_toolbar"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/c_toolbar"
+        android:id="@+id/snackbarlocation" />
+
+    <TextView
+        android:id="@+id/tv_id_card_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_or_padding_32"
+        android:layout_marginTop="@dimen/margin_or_padding_32"
+        android:layout_marginEnd="@dimen/margin_or_padding_32"
+        android:text="@string/activity_id_card_verification_description_label"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/font_size_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/c_toolbar" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_or_padding_10"
+        android:layout_marginTop="@dimen/margin_or_padding_20"
+        android:layout_marginEnd="@dimen/margin_or_padding_16"
+        android:background="@drawable/img_divider_green"
+        app:layout_constraintEnd_toEndOf="@id/btn_id_card_capture"
+        app:layout_constraintTop_toBottomOf="@id/tv_id_card_description" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_or_padding_24"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/img_id_card_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.nafaz.android.ui.view.button.LoadingMaterialButton
+        android:id="@+id/btn_id_card_capture"
+        style="?buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_or_padding_24"
+        android:layout_marginTop="@dimen/margin_or_padding_56"
+        android:layout_marginEnd="@dimen/margin_or_padding_24"
+        android:text="@string/activity_face_fingerprint_capture_btn"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_arrow_forward_white_24dp"
+        app:iconGravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:lb_loaderMargin="@dimen/margin_or_padding_12"
+        app:shapeAppearance="@style/Theme.Button.TopSideCutCorner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

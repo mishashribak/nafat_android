@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">Nafadh</string>
+
+    <!-- Common strings -->
+    <string name="toolbar_common_title">National Single Sign-On</string>
+    <string name="snackbar_message_coming_soon" translatable="false">Coming soon!</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_capture">Capture</string>
+    <string name="btn_complete">Complete</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_confirm">Confirm</string>
+
+    <!-- ImageView Content Description -->
+    <string name="image_description">Image</string>
+
+    <!-- Splash activity strings -->
+    <string name="activity_splash_lang">Ar</string>
+    <string name="activity_splash_centered_text" >National Single Sign-On</string>
+    <string name="activity_splash_login_btn">Login</string>
+    <string name="activity_splash_register_btn">Register</string>
+    <string name="activity_splash_bottom_centered_text">Development and Operation\nNational Information Center</string>
+
+    <!-- Main activity strings -->
+    <string name="activity_main_title">Home page</string>
+    <string name="activity_main_capture_code">Capture code</string>
+    <string name="activity_main_account_management">Account management</string>
+
+    <!-- IDNumber activity strings -->
+    <string name="activity_id_num_enter_id">Enter Your ID Number</string>
+    <string name="activity_id_num_enter_id_hint">@string/activity_id_num_enter_id</string>
+    <string name="activity_id_num_confirm_btn">Confirm</string>
+    <string name="activity_id_num_error_id_num">The sent ID is not registered</string>
+    <string name="activity_id_num_absher_note">Note: If you have an Absher account you are already registered, no need to complete the registration process.</string>
+    <string name="activity_id_num_create_new_account">Do you need to create new account?</string>
+    <string name="activity_id_check_service">Please enter your national Id or Iqama Id and follow the guidelines to use your mobile in IAM services</string>
+
+    <!-- Verification Methods activity strings -->
+    <string name="activity_verification_methods_description_label">To complete the registration, you need to authenticate using one of the following methods</string>
+    <string name="activity_verification_methods_mobile_verification_label">Mobile verification</string>
+    <string name="activity_verification_methods_face_fingerprint_label">Face fingerprint</string>
+    <string name="activity_verification_methods_id_numer_label">ID card</string>
+    <string name="activity_verification_methods_security_question_label">Protection questions</string>
+    <string name="activity_verification_methods_skip_label">Skip</string>
+
+    <!-- Mobile Verification activity strings -->
+    <string name="activity_mobile_verification_title">Mobile Verification</string>
+    <string name="activity_mobile_verification_enter_mobile_num">Enter mobile number</string>
+    <string name="activity_mobile_verification_enter_enter_mobile_num_hint">Mobile number</string>
+    <string name="activity_mobile_verification_enter_pin_code">Enter the verification code</string>
+    <string name="activity_mobile_verification_successful">Successfully verified</string>
+    <string name="activity_mobile_verification_next_btn">Next</string>
+
+    <!-- Face Fingerprint activity strings -->
+    <string name="activity_face_fingerprint_title">@string/activity_verification_methods_face_fingerprint_label</string>
+    <string name="activity_face_fingerprint_description_label">Please look at the camera to take a facial image</string>
+    <string name="activity_face_fingerprint_error_label">The picture is not good, please take a suitable picture</string>
+    <string name="activity_face_fingerprint_capture_btn">Capture</string>
+
+    <!-- Minimum Verification Dialog strings -->
+    <string name="dialog_verification_info_title">Info</string>
+    <string name="dialog_verification_info_message">Minimum verification is completed, tap next to finalize registration</string>
+
+    <!-- Verification Prompt activity strings -->
+    <string name="activity_verification_prompt_number_description_label">Do you want to use this number for authentication?</string>
+    <string name="activity_verification_prompt_device_description_label">Do you want to use this device for authentication?</string>
+
+    <!-- New Account activity strings -->
+    <string name="activity_new_account_label">New account</string>
+    <string name="activity_new_account_username_hint">Username</string>
+    <string name="activity_new_account_password_hint">Password</string>
+    <string name="activity_new_account_confirm_password_hint">Confirm password</string>
+
+    <!-- Successful activity strings -->
+    <string name="activity_successful_reg_description">Registration Successful</string>
+    <string name="activity_successful_mobile_verif_description">@string/activity_mobile_verification_successful</string>
+
+    <!-- ID Card activity strings -->
+    <string name="activity_id_card_verification_title">ID Card verification</string>
+    <string name="activity_id_card_verification_description_label">Please place the national ID on your mobile device</string>
+
+    <!-- Email Verification activity strings -->
+    <string name="activity_email_verification_title">Email verification</string>
+    <string name="activity_email_verification_description_label">Enter your email address</string>
+    <string name="activity_email_verification_email_hint">Email address</string>
+
+    <!-- Protection Question activity strings -->
+    <string name="activity_protection_questions_title">@string/activity_verification_methods_security_question_label</string>
+    <string name="activity_protection_questions_select_question">Select question</string>
+    <string name="activity_protection_questions_select_answer">Select answer</string>
+
+    <!-- Account Management activity strings -->
+    <string name="title_activity_account_management">@string/activity_main_account_management</string>
+    <string name="title_acc_history">Account history</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_manage_acc">Manage account</string>
+    <string name="label_profile_edit">Edit</string>
+    <string name="label_profile_name">Name:</string>
+    <string name="label_profile_age">Age:</string>
+    <string name="label_profile_marital_status">Marital status:</string>
+    <string name="label_manage_acc_description">This list contains the available authentication methods and status</string>
+    <string name="label_gender_male">Male</string>
+    <string name="label_gender_female">Female</string>
+
+    <!-- Delete Device dialog strings -->
+    <string name="title_dialog_device_delete">Do you want to delete this device</string>
+    <string name="message_dialog_device_delete">When accepting it will be permanently removed</string>
+
+    <!-- Calligraphy font -->
+    <string name="Font_Regular">fonts/TheSans-Plain.otf</string>
+
+    <!-- Validations -->
+    <string name="error_invalid_id">Enter a valid Identity id</string>
+    <string name="error_invalid_phone">Enter a valid phone number</string>
+    <string name="error_invalid_code">Enter a valid verification code</string>
+    <string name="error_invalid_password">Enter a valid password</string>
+    <string name="error_password_not_match">Password does not match</string>
+    <string name="error_invalid_username">Enter a valid username</string>
+    <string name="error_internet_not_present">Please check your internet connection then try again</string>
+    <string name="error_general">An error was occurred, please try again later</string>
+
+    <string name="error_username_input">Username should be at least 8-20 characters long</string>
+    <string name="error_contain_only">Username should contains 0-9 a-z A-Z _ - only</string>
+    <string name="error_username_contain_special">Username should not contain special characters</string>
+    <string name="error_contain_arabic">Username should not contain arabic characters</string>
+    <string name="error_pass_input">Password should be at least 8-20 characters long</string>
+    <string name="error_contain_number">Password should contain at least one number</string>
+    <string name="error_pass_contain_special">Password should contain at least one special character</string>
+    <string name="error_pass_contain_arabic">Password should not contain arabic characters</string>
+    <string name="error_repet_single">No repetition of single character more than 3 times</string>
+    <string name="error_repet_block">No repetition of sequence of characters/numbers more than 2 times.</string>
+    <string name="error_contain_name">Password should not contain username or national Id</string>
+
+    <!-- Face Capture -->
+    <string name="dot_face_capture_instruction_step_position_centering">Center your face</string>
+    <string name="dot_face_capture_instruction_step_position_centering2">Move your face to the center of the circle</string>
+    <string name="dot_face_capture_instruction_step_position_too_close">Move back</string>
+    <string name="dot_face_capture_instruction_step_position_too_close2">Move your device away from your face</string>
+    <string name="dot_face_capture_instruction_step_position_too_far">Move closer</string>
+    <string name="dot_face_capture_instruction_step_position_too_far2">Move your device closer to your face</string>
+    <string name="dot_face_capture_instruction_step_lighting">Move towards light</string>
+    <string name="dot_face_capture_instruction_step_lighting2">Rotate your face towards the light</string>
+    <string name="dot_face_capture_instruction_step_capture">Stay still&#8230;</string>
+    <!-- Liveness Check -->
+    <string name="dot_liveness_check_instruction_watch_object">Watch the object</string>
+    <string name="dot_liveness_check_instruction_watch_object_no_eyes">Can\'t see your eyes. Watch the object.</string>
+    <string name="dot_liveness_check_instruction_look_straight">Look straight</string>
+    <string name="dot_liveness_check_instruction_low_quality_face">Move towards light</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="code">Captcha</string>
+    <string name="username_required">Enter username</string>
+    <string name="pasword_required">Enter password</string>
+    <string name="captcha_required">Enter captcha</string>
+    <string name="actions">Actions</string>
+    <string name="exit">Exit</string>
+    <string name="generator_otp">One Time password</string>
+    <string name="new_password_60">A new password will be generated in %s seconds</string>
+    <string name="copy">Copy</string>
+    <string name="check_user">Check user</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_mobile">Reset Mobile</string>
+    <string name="reenroll_totp">Re-Entroll TOTP</string>
+    <string name="enroll_totp">Enroll TOTP</string>
+    <string name="username_password">Username and Password</string>
+    <string name="verification">Verification Success</string>
+
+    <string name="are_you_sure_back">Are you sure you want to start the verification from beginning?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_one_actions">Please select one of the actions below:</string>
+    <string name="authentication">Authentication</string>
+    <string name="one_time_pass">One Time Pass</string>
+    <string name="log_in">Log in</string>
+    <string name="id_number">ID\nNumber</string>
+    <string name="type_text">Type the text</string>
+    <string name="level_one_auth">Level One\nAuthentication</string>
+    <string name="level_two_auth">Level Two\nAuthentication</string>
+    <string name="one_time_pass_otp">One\nTime Pass</string>
+</resources>

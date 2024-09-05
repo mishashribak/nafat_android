@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">نفاذ</string>
+
+    <!-- Common strings -->
+    <string name="toolbar_common_title">النفاذ الوطني الموحد</string>
+    <string name="btn_next">التالي</string>
+    <string name="btn_capture">التقاط</string>
+    <string name="btn_complete">إكمال</string>
+    <string name="btn_yes">نعم</string>
+    <string name="btn_no">لا</string>
+    <string name="btn_back">عودة</string>
+    <string name="btn_confirm">تأكيد</string>
+
+    <!-- ImageView Content Description -->
+    <string name="image_description">صورة</string>
+
+    <!-- Splash activity strings -->
+    <string name="activity_splash_lang">En</string>
+    <string name="activity_splash_centered_text">النفاذ الوطني الموحد</string>
+    <string name="activity_splash_login_btn">تسجيل دخول</string>
+    <string name="activity_splash_register_btn">حساب جديد</string>
+    <string name="activity_splash_bottom_centered_text">تطوير وتشغيل\nمركز المعلومات الوطني</string>
+
+    <!-- Main activity strings -->
+    <string name="activity_main_title">الصفحة الرئيسية</string>
+    <string name="activity_main_capture_code">مسح الرمز</string>
+    <string name="activity_main_account_management">ادارة الحساب</string>
+
+    <!-- ID Number activity strings -->
+    <string name="activity_id_num_enter_id">أدخل رقم الهوية</string>
+    <string name="activity_id_num_enter_id_hint">@string/activity_id_num_enter_id</string>
+    <string name="activity_id_num_confirm_btn">تأكيد</string>
+    <string name="activity_id_num_error_id_num">المعرف المرسل غير مسجل</string>
+    <string name="activity_id_num_absher_note">ملاحظة : إذا كان بحوزتك حساب أبشر فأنت مسجل مسبقاً عندنا، لا داعي لإكمال عملية التسجيل.</string>
+    <string name="activity_id_num_create_new_account">هل تحتاج إلى إنشاء حساب جديد؟</string>
+    <string name="activity_id_check_service">الرجاء إدخال رقم الهوية أو الإقامة واتباع الخطوات اللازمة لاستخدام خدمات النفاذ الموحد</string>
+
+    <!-- Verification Methods activity strings -->
+    <string name="activity_verification_methods_description_label">لإكمال التسجيل تحتاج التوثيق باستخدام إحدى الطرق التالية</string>
+    <string name="activity_verification_methods_mobile_verification_label">التحقق برقم الجوال</string>
+    <string name="activity_verification_methods_face_fingerprint_label">بصمة الوجه</string>
+    <string name="activity_verification_methods_id_numer_label">بطاقة الهوية</string>
+    <string name="activity_verification_methods_security_question_label">أسئلة الحماية</string>
+    <string name="activity_verification_methods_skip_label">تجاوز</string>
+
+    <!-- Mobile Verification activity strings -->
+    <string name="activity_mobile_verification_title">التحقق برقم الجوال</string>
+    <string name="activity_mobile_verification_enter_mobile_num">أدخل رقم الجوال</string>
+    <string name="activity_mobile_verification_enter_enter_mobile_num_hint">رقم الجوال</string>
+    <string name="activity_mobile_verification_enter_pin_code">ادخل رقم التوثيق</string>
+    <string name="activity_mobile_verification_successful">تم التحقق بنجاح</string>
+    <string name="activity_mobile_verification_next_btn">التالي</string>
+
+    <!-- Face Fingerprint activity strings -->
+    <string name="activity_face_fingerprint_title">@string/activity_verification_methods_face_fingerprint_label</string>
+    <string name="activity_face_fingerprint_description_label">الرجاء النظر إلى الكاميرا لالتقاط صورة الوجه</string>
+    <string name="activity_face_fingerprint_error_label">الصورة ليست جيدة، الرجاء التقاط صورة مناسبة</string>
+    <string name="activity_face_fingerprint_capture_btn">التقاط</string>
+
+    <!-- Minimum Verification Dialog strings -->
+    <string name="dialog_verification_info_title">معلومة</string>
+    <string name="dialog_verification_info_message">اكتمال الحد الأدنى من التحقق ، انقر فوق التالي لإنهاء التسجيل</string>
+
+    <!-- Verification Prompt activity strings -->
+    <string name="activity_verification_prompt_number_description_label">هل تريد استخدام هذا الرقم للتوثيق؟</string>
+    <string name="activity_verification_prompt_device_description_label">هل تريد استخدام هذا الجهاز للتوثيق؟</string>
+
+    <!-- New Account activity strings -->
+    <string name="activity_new_account_label">حساب جديد</string>
+    <string name="activity_new_account_username_hint">اسم المستخدم</string>
+    <string name="activity_new_account_password_hint">كلمة المرور</string>
+    <string name="activity_new_account_confirm_password_hint">تأكيد كلمة المرور</string>
+
+    <!-- Successful activity strings -->
+    <string name="activity_successful_reg_description">تم التسجيل بنجاح</string>
+    <string name="activity_successful_mobile_verif_description">@string/activity_mobile_verification_successful</string>
+
+    <!-- ID Card activity strings -->
+    <string name="activity_id_card_verification_title">التحقق من البطاقة</string>
+    <string name="activity_id_card_verification_description_label">الرجاء وضع الهوية الوطنية على جهاز الموبايل</string>
+
+    <!-- Email Verification activity strings -->
+    <string name="activity_email_verification_title">توثيق البريد الالكتروني</string>
+    <string name="activity_email_verification_description_label">ادخل البريد الالكتروني</string>
+    <string name="activity_email_verification_email_hint">البريد الالكتروني</string>
+
+    <!-- Protection Question activity strings -->
+    <string name="activity_protection_questions_title">@string/activity_verification_methods_security_question_label</string>
+    <string name="activity_protection_questions_select_question">اختر السؤال</string>
+    <string name="activity_protection_questions_select_answer">اختر الاجابة</string>
+
+    <!-- Account Management activity strings -->
+    <string name="title_activity_account_management">@string/activity_main_account_management</string>
+    <string name="title_acc_history">سجل العمليات</string>
+    <string name="title_profile">الملف الشخصي</string>
+    <string name="title_manage_acc">ادارة الحساب</string>
+    <string name="label_profile_edit">تعديل</string>
+    <string name="label_profile_name">الاسم:</string>
+    <string name="label_profile_age">العمر:</string>
+    <string name="label_profile_marital_status">الحالة:</string>
+    <string name="label_manage_acc_description">تحتوي هذه القائمة على طرق التوثيق المتاحة وحالتها</string>
+    <string name="label_gender_male">ذكر</string>
+    <string name="label_gender_female">أنثى</string>
+
+    <!-- Delete Device dialog strings -->
+    <string name="title_dialog_device_delete">هل تريد حذف هذا الجهاز</string>
+    <string name="message_dialog_device_delete">عند القبول سيتم إزالته بشكل دائم</string>
+
+    <!-- Calligraphy font -->
+    <string name="Font_Regular">fonts/TheSansArabic-Plain.ttf</string>
+
+    <!-- Validations -->
+    <string name="error_invalid_id">أدخل رقم هوية صحيح</string>
+    <string name="error_invalid_phone">أدخل رقم هاتف صحيح</string>
+    <string name="error_invalid_code">أدخل رمز تحقق صحيح</string>
+    <string name="error_invalid_password">أدخل كلمة مرور صحيحة</string>
+    <string name="error_password_not_match">كلمة السر غير متطابقة</string>
+    <string name="error_invalid_username">أدخل اسم مستخدم صالح</string>
+    <string name="error_internet_not_present">الرجاء التأكد من الاتصال بالانترنت ثم المحاولة مرة أخرى</string>
+    <string name="error_general">حدث خطأ، يرجى المحاولة لاحقاً</string>
+
+    <!-- Face Capture -->
+    <string name="dot_face_capture_instruction_step_position_centering" tools:override="true">أبقِ وجهك في المنتصف</string>
+    <string name="dot_face_capture_instruction_step_position_centering2" tools:override="true">أبقِ وجهك في منتصف الدائرة</string>
+    <string name="dot_face_capture_instruction_step_position_too_close" tools:override="true">ارجع للوراء</string>
+    <string name="dot_face_capture_instruction_step_position_too_close2" tools:override="true">أبقِ جهازك بعيداً عن وجهك</string>
+    <string name="dot_face_capture_instruction_step_position_too_far" tools:override="true">أبقِ وجهك قريباً</string>
+    <string name="dot_face_capture_instruction_step_position_too_far2" tools:override="true">أبقِ جهازك قريباً من وجهك</string>
+    <string name="dot_face_capture_instruction_step_lighting" tools:override="true">تحرك نحو الضوء</string>
+    <string name="dot_face_capture_instruction_step_lighting2" tools:override="true">أدِر وجهك نحو الضوء</string>
+    <string name="dot_face_capture_instruction_step_capture" tools:override="true">اثبت مكانك&#8230;</string>
+    <!-- Liveness Check -->
+    <string name="dot_liveness_check_instruction_watch_object" tools:override="true">شاهد الكائن</string>
+    <string name="dot_liveness_check_instruction_watch_object_no_eyes" tools:override="true">لا أستطيع رؤية عينيك. شاهد الكائن</string>
+    <string name="dot_liveness_check_instruction_look_straight" tools:override="true">أنظر بشكل مستقيم</string>
+    <string name="dot_liveness_check_instruction_low_quality_face" tools:override="true">تحرك نحو الضوء</string>
+
+    <!-- Validation -->
+    <string name="error_username_input">طول اسم المستخدم من ٨ إلى ٢٠ محرف</string>
+    <string name="error_contain_only">يحتوي اسم المستخدم على حروف وأرقام وإشارة -ـ فقط</string>
+    <string name="error_username_contain_special">لا يقبل اسم المستخدم المحارف الخاصة</string>
+    <string name="error_contain_arabic">لا يقبل اسم المستخدم الحروف العربية</string>
+    <string name="error_pass_input">طول كلمة المرور من ٨ إلى ٢٠ محرف</string>
+    <string name="error_contain_number">يجب أن تحتوي كلمة المرور على رقم على الأقل</string>
+    <string name="error_pass_contain_special">يجب أن تحتوي كلمة المرور على محرف خاص واحد على الأقل</string>
+    <string name="error_pass_contain_arabic">لا تقبل كلمة المرور الحروف العربية</string>
+    <string name="error_repet_single">لا تقبل كلمة المرور تكرار نفس المحرف ٣ مرات متتالية</string>
+    <string name="error_repet_block">لا تقبل كلمة المرور تكرار نفس مجموعة المحارف مرتين</string>
+    <string name="error_contain_name">يجب ألا تحتوي كلمة المرور على اسم المستخدم أو رقم الهوية</string>
+
+    <string name="username"> اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="code">الرمز المرئي</string>
+    <string name="username_required">أدخل اسم المستخدم</string>
+    <string name="pasword_required">أدخل كلمة المرور</string>
+    <string name="captcha_required">ادخل الرمز المرئي</string>
+    <string name="actions">الاجراءات</string>
+    <string name="exit">خروج</string>
+    <string name="generator_otp">كلمة المرور المؤقتة</string>
+    <string name="new_password_60">سيتم توليد كلمة مرور جديدة خلال %s ثانية</string>
+    <string name="copy">نسخ</string>
+    <string name="check_user">دخول</string>
+    <string name="generate_otp"> كلمة سر مؤقتة</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="reset_mobile">تعديل رقم الجوال</string>
+    <string name="reenroll_totp"> إعادة ضبط كلمة المرور المؤقتة</string>
+    <string name="enroll_totp">ضبط كلمة المرور المؤقتة</string>
+    <string name="username_password">إسم المستخدم و كلمة المرور</string>
+    <string name="verification">تم التحقق بنجاح</string>
+
+    <string name="are_you_sure_back">هل أنت تريد إعادة عملية التوثيق من البداية؟</string>
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="select_one_actions">الرجاء اختيار إحدى الخيارات التالية:</string>
+
+    <string name="authentication">التوثيق</string>
+    <string name="one_time_pass"> المرور المؤقتة</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="id_number">رقم \nالهوية</string>
+    <string name="type_text">أدخل الرمز المرئي</string>
+    <string name="level_one_auth">مستوى\n  التوثيق الأول</string>
+    <string name="level_two_auth">مستوى\n  التوثيق الثاني</string>
+    <string name="one_time_pass_otp">كلمة مرور \n مؤقتة</string>
+</resources>

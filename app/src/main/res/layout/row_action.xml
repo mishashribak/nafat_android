@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_or_padding_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.nafaz.android.ui.view.button.LoadingMaterialButton
+        android:id="@+id/btnAction"
+        style="?buttonStyle"
+        app:shapeAppearance="@style/Theme.OutlinedTextInputLayout.RoundCorner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_height"
+        android:textSize="@dimen/font_size_16"
+        android:layout_marginStart="@dimen/margin_or_padding_24"
+        android:layout_marginEnd="@dimen/margin_or_padding_24"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="false"
+        app:lb_loaderMargin="@dimen/margin_or_padding_12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

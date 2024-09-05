@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="buttonStyle" format="reference" />
+
+    <declare-styleable name="LoadingMaterialButton">
+        <attr name="lb_loaderWidth" format="dimension" />
+        <attr name="lb_loaderMargin" format="dimension" />
+        <attr name="lb_isLoading" format="boolean" />
+
+    </declare-styleable>
+</resources>

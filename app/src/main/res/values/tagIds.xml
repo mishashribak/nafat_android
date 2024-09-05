@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="position" translatable="false">tag_position</string>
+    <string name="item_id" translatable="false">tag_item_id</string>
+
+</resources>

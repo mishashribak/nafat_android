@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.fragment.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_profile_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_or_padding_10"
+            android:background="@drawable/profile_circle_background"
+            android:contentDescription="@string/image_description"
+            android:padding="@dimen/margin_or_padding_16"
+            android:src="@drawable/icon_profile_photo_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_profile_edit"
+            style="?buttonStyle"
+            android:layout_width="@dimen/margin_or_padding_26"
+            android:layout_height="@dimen/margin_or_padding_36"
+            android:layout_marginTop="@dimen/margin_or_padding_4"
+            android:paddingStart="@dimen/margin_or_padding_2"
+            app:backgroundTint="@android:color/white"
+            app:icon="@drawable/icon_profile_edit"
+            app:iconGravity="textEnd"
+            app:iconSize="@dimen/margin_or_padding_16"
+            app:iconTint="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_profile_photo"
+            app:shapeAppearance="@style/Theme.SmallButton.TopSideCutCorner"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_profile_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_profile_edit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_profile_edit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cl_profile_header"
+        android:id="@+id/snackbarlocation" />
+
+    <ProgressBar
+        android:id="@+id/pb_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_profile_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_or_padding_32"
+        app:layout_constraintEnd_toEndOf="@+id/cl_profile_header"
+        app:layout_constraintStart_toStartOf="@+id/cl_profile_header"
+        app:layout_constraintTop_toBottomOf="@id/cl_profile_header">
+
+        <TextView
+            android:id="@+id/tv_profile_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:text="@string/label_profile_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_or_padding_4"
+            android:text="Mohammad"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/font_size_16"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_profile_name_label"
+            app:layout_constraintStart_toEndOf="@+id/tv_profile_name_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_profile_name_label" />
+
+        <TextView
+            android:id="@+id/tv_profile_age_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_or_padding_8"
+            android:background="?selectableItemBackground"
+            android:text="@string/label_profile_age"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size_16"
+            app:layout_constraintStart_toStartOf="@+id/tv_profile_name_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_name_label" />
+
+        <TextView
+            android:id="@+id/tv_profile_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_or_padding_4"
+            android:text="40"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/font_size_16"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_profile_age_label"
+            app:layout_constraintStart_toEndOf="@+id/tv_profile_age_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_profile_age_label" />
+
+        <TextView
+            android:id="@+id/tv_profile_marital_status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_or_padding_4"
+            android:background="?selectableItemBackground"
+            android:text="@string/label_profile_marital_status"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size_16"
+            app:layout_constraintStart_toStartOf="@+id/tv_profile_age_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_profile_age_label" />
+
+        <TextView
+            android:id="@+id/tv_marital_status_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_or_padding_4"
+            android:text="Married"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/font_size_16"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_profile_marital_status_label"
+            app:layout_constraintStart_toEndOf="@+id/tv_profile_marital_status_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_profile_marital_status_label" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

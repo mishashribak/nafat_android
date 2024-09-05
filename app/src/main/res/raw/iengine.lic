@@ -1,0 +1,22 @@
+{
+  "version": "2.0",
+  "contract": {
+    "customer": "tcc",
+    "expiration": {
+      "year": 2019,
+      "month": 12,
+      "day": 31
+    },
+    "products": [
+      "iface"
+    ],
+    "idkit": {
+      "max_client_connections": 0,
+      "database_size": 0
+    },
+    "hwids": [
+      "APLrLCkk8dZn/pID"
+    ],
+    "signature": "SqaCuNc9HaHIehOfVDOouYvnAhgla0zdBmMaH0wKFPVN4BLJ05csvWNDj8c/YWb+u2Cbwq2GBudkzu9bcM7yOVG1bq6Ym4D1MkNsdxiTupTbulwZPnwF9NPfMxyDXbJ/bN5lLa/7ECOCKDsHhxW9JaEt8Jz+6bN+r7FFlz5xGTE="
+  }
+}

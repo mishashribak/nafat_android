@@ -1,0 +1,81 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="font_size_7">7sp</dimen>
+    <dimen name="font_size_8">8sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_13">13sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_28">28sp</dimen>
+    <dimen name="font_size_32">32sp</dimen>
+    <dimen name="font_size_36">36sp</dimen>
+    <dimen name="font_size_48">48sp</dimen>
+    <dimen name="font_size_56">56sp</dimen>
+    <dimen name="font_size_64">64sp</dimen>
+    <dimen name="font_size_72">72sp</dimen>
+
+    <!-- Margin & Padding dimens -->
+    <dimen name="margin_or_padding_2">2dp</dimen>
+    <dimen name="margin_or_padding_4">4dp</dimen>
+    <dimen name="margin_or_padding_6">6dp</dimen>
+    <dimen name="margin_or_padding_8">8dp</dimen>
+    <dimen name="margin_or_padding_10">10dp</dimen>
+    <dimen name="margin_or_padding_12">12dp</dimen>
+    <dimen name="margin_or_padding_16">16dp</dimen>
+    <dimen name="margin_or_padding_20">20dp</dimen>
+    <dimen name="margin_or_padding_24">24dp</dimen>
+    <dimen name="margin_or_padding_26">26dp</dimen>
+    <dimen name="margin_or_padding_32">32dp</dimen>
+    <dimen name="margin_or_padding_36">36dp</dimen>
+    <dimen name="margin_or_padding_40">40dp</dimen>
+    <dimen name="margin_or_padding_48">48dp</dimen>
+    <dimen name="margin_or_padding_52">52dp</dimen>
+    <dimen name="margin_or_padding_56">56dp</dimen>
+    <dimen name="margin_or_padding_64">64dp</dimen>
+    <dimen name="margin_or_padding_72">72dp</dimen>
+    <dimen name="margin_or_padding_84">84dp</dimen>
+    <dimen name="margin_or_padding_96">96dp</dimen>
+    <dimen name="margin_or_padding_120">120dp</dimen>
+
+
+    <!-- ##### Begin Splash Screen related dimens ##### -->
+    <!-- img_ksa_map_of_people dimens -->
+    <dimen name="img_ksa_map_of_people_dimen">299dp</dimen>
+
+    <!-- img_ksa_ministry_of_interior_logo dimens -->
+    <dimen name="img_ksa_ministry_of_interior_logo_dimen">36dp</dimen>
+    <dimen name="img_ksa_ministry_of_interior_logo_start_margin">20dp</dimen>
+
+    <!-- img_nafadh_logo_white dimen -->
+    <dimen name="img_nafadh_logo_white_end_margin">20dp</dimen>
+
+    <!-- tv_splash_bottom_text dimen -->
+    <dimen name="tv_splash_bottom_text_bottom_margin">13dp</dimen>
+
+    <!-- ##### End Splash Screen related dimens ##### -->
+
+
+    <!-- ##### Begin Home Screen related dimens ##### -->
+    <dimen name="btn_main_dimen">110dp</dimen>
+
+    <!-- ##### End Home Screen related dimens ##### -->
+
+    <dimen name="btn_successful_mobile_verification_dimen">150dp</dimen>
+
+    <dimen name="img_face_fingerprint_width">215dp</dimen>
+    <dimen name="img_face_fingerprint_height">220dp</dimen>
+
+    <dimen name="fbutton_default_progress_margin">15dp</dimen>
+    <dimen name="fbutton_default_progress_width">10dp</dimen>
+    <dimen name="margin_or_padding_30">30dp</dimen>
+    <dimen name="input_height">45dp</dimen>
+    <dimen name="bt_height">55dp</dimen>
+</resources>

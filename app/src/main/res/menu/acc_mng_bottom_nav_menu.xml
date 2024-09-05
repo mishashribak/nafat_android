@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_acc_history"
+        android:icon="@drawable/icon_acc_history"
+        android:title="@string/title_acc_history" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/icon_profile"
+        android:title="@string/title_profile" />
+
+    <item
+        android:id="@+id/navigation_manage_acc"
+        android:icon="@drawable/icon_manage_acc"
+        android:title="@string/title_manage_acc" />
+
+</menu>
